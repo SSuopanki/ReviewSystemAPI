@@ -6,7 +6,10 @@ Frontend can be found [here](https://github.com/SSuopanki/FeedbackPrototype).
 ## Installation
 
 Setup Database using preferred method. I used MSSQL. Add database called **Review**. \
-Then create Tables **Review Table** 
+Then create Tables and do not allow null values 
+
+
+**Review Table** 
 | Column Name | Data Type|
 | ------------- | ------------- |
 | ReviewId  | uniqueidentifier (PK) |
@@ -20,9 +23,6 @@ Then create Tables **Review Table**
 | Rating  | decimal(5,2)  |
 | ProductId  | uniqueIdentifier  | 
 
-Dont allow Nulls </Br>
-
-</Br>
 
 **Comment Table**
 
@@ -33,7 +33,14 @@ Dont allow Nulls </Br>
 | CommentText  |  varchar(MAX) |
 | ReviewId  | uniqueidentifier  |
 
-Dont allow Nulls
 
 **Product Table**.
+
+| Column Name | Data Type|
+| ------------- | ------------- |
+| ProductId | uniqueidentifier  |
+| ProductName | nchar(10)  |
+| ProductRating  | decimal(5,2)  |
+
+Clone Repository and make sure connection string is correct.
 
